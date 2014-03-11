@@ -237,14 +237,14 @@ MongoDB. Для начала необходимо загрузить библи�
 
 .. code-block:: javascript
 
-    mongoose = require('mongoose').Mongoose
-    db = mongoose.connect('mongodb://localhost/nodepad')
+    mongoose = require('mongoose');
+    db = mongoose.connect('mongodb://localhost/nodepad');
 
 Я сделал файл моделей с примером:
 
 .. code-block:: javascript
 
-    var mongoose = require('mongoose').Mongoose;
+    var mongoose = require('mongoose');
 
     mongoose.model('Document', {
       properties: ['title', 'data', 'tags'],
